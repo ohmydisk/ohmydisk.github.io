@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+body {
+color: white;
+background: red;
+}
+</style>
+</head>
+<body>
+<script>
+document.cookie = 'testcookie=123';
+var msg = 'pwn! Oh my, is this an XSS? SCOPE: ' + document.domain + '; COOKIES: ' + document.cookie;
+document.write(msg);
+alert(msg);
+</script>
+</body>
+</html>
+
